@@ -37,7 +37,8 @@
         android:icon="@drawable/logo"
         android:label="FacePay"
         android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning">
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:label">
         <activity android:name="cultoftheunicorn.marvel.PaymentActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 

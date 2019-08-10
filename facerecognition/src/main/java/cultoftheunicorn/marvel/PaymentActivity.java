@@ -17,6 +17,7 @@ public class PaymentActivity extends AppCompatActivity {
     String payname ;
     String transactionNote ;
     String payammount;
+    Integer intammount;
     String currencyunit = "INR";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,12 +35,13 @@ public class PaymentActivity extends AppCompatActivity {
         payname = name.getText().toString();
         transactionNote = note.getText().toString();
         payammount = ammount.getText().toString();
+        intammount = Integer.valueOf(payammount);
 
-        if (payaddress.equals("")) {
-            Toast.makeText(getApplicationContext(), "Please enter Payaddress", Toast.LENGTH_SHORT).show();
-        }
-        else if (payname.equals("")) {
+        if (payname.equals("")) {
             Toast.makeText(getApplicationContext(), "Please enter Payname", Toast.LENGTH_SHORT).show();
+        }
+        else if (payaddress.equals("")) {
+            Toast.makeText(getApplicationContext(), "Please enter Payaddress", Toast.LENGTH_SHORT).show();
         }
         else if (transactionNote.equals("")) {
             Toast.makeText(getApplicationContext(), "Please enter transaction Note", Toast.LENGTH_SHORT).show();
@@ -47,9 +49,9 @@ public class PaymentActivity extends AppCompatActivity {
         else if (payammount.equals("")) {
             Toast.makeText(getApplicationContext(), "Please Fill the Details", Toast.LENGTH_SHORT).show();
         }
-//        if (payammount.valueOf() > 5000 ) {
-//            Toast.makeText(getApplicationContext(), "Amount should be less than 5000", Toast.LENGTH_SHORT).show();
-//        }
+       if (intammount >5000 ) {
+            Toast.makeText(getApplicationContext(), "Amount should be less than 5000", Toast.LENGTH_SHORT).show();
+      }
         else if(!payaddress.equals("") || !payname.equals("") || !transactionNote.equals("") ){
             Uri uri = Uri.parse("upi://pay?pa=" + payaddress +
                     "&pn=" + payname

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="cultoftheunicorn.marvel.AppAuthActivity">
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo2"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:id="@+id/enterpwd"
+        android:hint="Enter pin"
+        android:singleLine="true"
+        android:inputType="numberPassword"
+        android:gravity="center"
+        android:background="@drawable/rounded_edittext"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/enterpwd"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:text="PIN"
+        android:background="@drawable/rounded_border"
+        android:onClick="Click"/>
+
+</RelativeLayout>

@@ -38,14 +38,30 @@
         android:label="FacePay"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity
-            android:name="cultoftheunicorn.marvel.MainActivity"
-            android:label="FacePay">
+        <activity android:name="cultoftheunicorn.marvel.AppAuthActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
+        <activity android:name="cultoftheunicorn.marvel.AppAuthReg"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="cultoftheunicorn.marvel.SplashScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="cultoftheunicorn.marvel.MainActivity"
+            android:label="FacePay">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name="cultoftheunicorn.marvel.Recognize"
@@ -57,10 +73,9 @@
         <activity
             android:name="cultoftheunicorn.marvel.NameActivity"
             android:windowSoftInputMode="adjustNothing" />
-        <activity android:name="cultoftheunicorn.marvel.ReviewResults"
-            android:label="Review and Mark"/>
-
-        <!--android:screenOrientation="portrait"-->
+        <activity
+            android:name="cultoftheunicorn.marvel.ReviewResults"
+            android:label="Review and Mark" />
     </application>
 
 </manifest>

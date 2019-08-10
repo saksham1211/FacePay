@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="cultoftheunicorn.marvel.AppAuthReg">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo2"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/pwd"
+        android:layout_margin="30dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Enter pin"
+        android:inputType="numberPassword"
+        android:gravity="center"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/pwd_confirm"
+        android:hint="Confirm pin"
+        android:inputType="numberPassword"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:background="@drawable/rounded_edittext"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/pwd" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_border"
+        android:layout_below="@+id/pwd_confirm"
+        android:onClick="Reg"
+        android:text="SET PIN"/>
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo2"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/payeaddress"
+        android:hint="Payee address"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_margin="25dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/payename"
+        android:hint="Name"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/payeaddress"
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/payammount"
+        android:hint="Ammount"
+        android:layout_margin="25dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/payeaddress"
+        />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/transaction_note"
+        android:hint="Note"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/payammount"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/transaction_note"
+        android:text="pay"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_border"
+        android:gravity="center"
+        android:onClick="pay"/>
+</RelativeLayout>

@@ -19,7 +19,7 @@
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:id="@+id/enterpwd"
-        android:hint="Enter pin"
+        android:hint="Enter Pin"
         android:singleLine="true"
         android:inputType="numberPassword"
         android:gravity="center"
@@ -28,7 +28,7 @@
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="30dp"
+        android:layout_height="35dp"
         android:layout_below="@+id/enterpwd"
         android:layout_centerInParent="true"
         android:layout_marginTop="50dp"

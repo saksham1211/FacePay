@@ -20,7 +20,7 @@
         android:id="@+id/pwd"
         android:layout_margin="30dp"
         android:background="@drawable/rounded_edittext"
-        android:hint="Enter pin"
+        android:hint="Enter Pin"
         android:inputType="numberPassword"
         android:gravity="center"
         android:layout_centerInParent="true"/>
@@ -29,7 +29,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/pwd_confirm"
-        android:hint="Confirm pin"
+        android:hint="Confirm Pin"
         android:inputType="numberPassword"
         android:layout_marginBottom="50dp"
         android:gravity="center"

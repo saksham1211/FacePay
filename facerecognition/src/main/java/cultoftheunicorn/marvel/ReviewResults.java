@@ -1,5 +1,6 @@
 package cultoftheunicorn.marvel;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 //import android.support.v7.widget.DividerItemDecoration;
@@ -108,9 +109,10 @@ public class ReviewResults extends AppCompatActivity implements ReviewListAdapte
 //            Attendees at = new Attendees(sb.toString(), (new Date()).toString());
 //            String key = myRef.push().getKey();
 //            myRef.child(key).setValue(at);
-
-            Toast.makeText(getApplicationContext(), "link BHIM- UPI", Toast.LENGTH_LONG).show();
-//            finish();
+            Intent intent = new Intent(getApplicationContext(),PaymentActivity.class);
+            startActivity(intent);
+         //   Toast.makeText(getApplicationContext(), "link BHIM- UPI", Toast.LENGTH_LONG).show();
+           finish();
 
 
 //            System.out.println(sb.toString());

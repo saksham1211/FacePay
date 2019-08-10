@@ -37,14 +37,22 @@
         android:icon="@drawable/logo"
         android:label="FacePay"
         android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="cultoftheunicorn.marvel.AppAuthActivity"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:label">
+        <activity android:name="cultoftheunicorn.marvel.PaymentActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
         </activity>
-        <activity android:name="cultoftheunicorn.marvel.AppAuthReg"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name="cultoftheunicorn.marvel.SplashScreen"
+        <activity
+            android:name="cultoftheunicorn.marvel.AppAuthActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
+        <activity
+            android:name="cultoftheunicorn.marvel.AppAuthReg"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="cultoftheunicorn.marvel.SplashScreen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

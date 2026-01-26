@@ -1,5 +1,5 @@
 # FacePay
-![alt text]([http://url/to/img.png](https://github.com/saksham1211/FacePay/blob/master/image.png))
+![alt text]([http://url/to/img.png]()](https://github.com/saksham1211/FacePay/blob/master/image.png)
 
 FacePay is a Java-based project for face-recognition powered payments and user authentication. This repository contains the Java source code and related resources for building and running the FacePay application.
 
